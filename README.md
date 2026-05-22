@@ -2,8 +2,6 @@
 
 A lightweight C++ framework built on top of OpenGL that abstracts away the boilerplate and lets you focus on building 3D scenes. Built as a learning project while working through OpenGL fundamentals, with a strong focus on clean architecture, developer experience, and performance.
 
----
-
 ## At a Glance
 
 - **Scene graph** with a node hierarchy, transform propagation, and dirty-flag caching
@@ -13,7 +11,7 @@ A lightweight C++ framework built on top of OpenGL that abstracts away the boile
 - **Memory safety** — strict ownership via `unique_ptr`, RAII, and explicitly deleted copy constructors throughout
 - **Built-in FPS camera** with mouse look and keyboard movement out of the box
 
----
+https://github.com/user-attachments/assets/6797ca43-a0d0-492d-92bb-865216529fea
 
 ## Quick Example
 
@@ -73,8 +71,6 @@ int main() {
   engine.run();
 }
 ```
-
----
 
 ## Architecture
 
@@ -196,8 +192,6 @@ std::sort(data.commands.begin(), data.commands.end(),
 
 `ResourceManager` centrally owns GPU resources using `shared_ptr`s stored in hash maps keyed by path or resource name. Assets are loaded lazily and deduplicated automatically — requesting the same mesh, shader, or texture multiple times returns the same underlying resource, avoiding redundant GPU allocations and simplifying lifetime management across the engine.
 
----
-
 ## Project Structure
 
 ```
@@ -223,8 +217,6 @@ src/
         └── LightNode       # Submits a LightData entry
 ```
 
----
-
 ## Building
 
 Requirements: CMake 3.16+, a C++20 compiler, OpenGL 3.3+ capable GPU.
@@ -245,8 +237,6 @@ cmake -B build
 cmake --build build
 ```
 
----
-
 ## Dependencies
 
 | Library   | Purpose         | How included              |
@@ -256,8 +246,6 @@ cmake --build build
 | GLM       | Math            | Vendored (`third-party/`) |
 | glad      | OpenGL loader   | Vendored (`third-party/`) |
 | stb_image | Texture loading | Vendored (`third-party/`) |
-
----
 
 ## Status & Roadmap
 
