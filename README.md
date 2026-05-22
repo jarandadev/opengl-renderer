@@ -11,7 +11,7 @@ A lightweight C++ framework built on top of OpenGL that abstracts away the boile
 - **Memory safety** — strict ownership via `unique_ptr`, RAII, and explicitly deleted copy constructors throughout
 - **Built-in FPS camera** with mouse look and keyboard movement out of the box
 
-https://github.com/user-attachments/assets/6797ca43-a0d0-492d-92bb-865216529fea
+<img width="800" height="450" alt="demo" src="https://github.com/user-attachments/assets/11d0133c-358a-4a94-8f8c-d6eaa5d89b05" />
 
 ## Quick Example
 
